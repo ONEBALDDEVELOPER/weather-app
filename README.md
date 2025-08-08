@@ -1,36 +1,42 @@
-# 🗺️ Nationality Predictor
+# 🌤️ Weather App
 
-A simple React web application that predicts a person's nationality based on their first name.  
-It uses the [Nationalize.io](https://nationalize.io/) API to return the most likely countries and their probabilities.
+A responsive React application that displays current weather information for any city in the world.  
+It fetches live data from the [OpenWeatherMap API](https://openweathermap.org/api).
 
 ---
 
 ## 📌 Features
-- Predict nationality by entering a first name.
-- Displays top country matches with probability scores.
-- Responsive, clean UI built with React and Vite.
-- Real-time API calls with instant results.
+- Search for weather by **city name**.
+- Displays:
+  - Temperature
+  - Weather description
+  - Weather icon
+- Responsive design for desktop and mobile.
+- Built with React and Vite for fast performance.
 
 ---
 
 ## 🛠️ Tech Stack
 - **Frontend:** React, Vite
 - **Styling:** CSS
-- **API:** [Nationalize.io](https://nationalize.io/) REST API
+- **API:** [OpenWeatherMap](https://openweathermap.org/) REST API
 - **Package Management:** npm
 
 ---
 
-## Installation & Setup
+## 📦 Installation & Setup
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/nationality-predictor.git
-   cd nationality-predictor
-2.	**Install dependencies**
+   git clone https://github.com/your-username/weather-app.git
+   cd weather-app
+2. **Create a .env file in the project root:**
+   ```env
+   VITE_WEATHER_API_KEY=your_api_key_here
+3.	**Install dependencies**
     ```bash
   	npm install
-3.  **Run the app**
+4.  **Run the app**
     ```bash
   	npm run dev
 4.  **Open in browser**
@@ -38,19 +44,19 @@ It uses the [Nationalize.io](https://nationalize.io/) API to return the most lik
   	http://localhost:5173
 
 ## 🚀 Usage
-	1.	Enter a **first name** into the search box.
-	2.	Click **Predict**.
-	3.	View the top predicted nationalities and their probabilities.
+	1.	Type a city name in the search box.
+	2.	Press Enter or click Search.
+	3.	View the live weather information.
 
-## 📂 Project Structure 
-  nationality-predictor/
+## 📂 Project Structure
+   weather-app/
 │── public/             # Static assets
 │── src/
-│   ├── App.jsx         # Main UI and API handling
+│   ├── App.jsx         # Main UI and API logic
 │   ├── main.jsx        # React entry point
 │   ├── App.css         # Component styles
-│   └── index.css       # Global styles
+│   ├── index.css       # Global styles
+│   └── assets/         # Images and icons
 │── index.html          # Root HTML file
 │── package.json        # Project dependencies
 │── vite.config.js      # Vite configuration
-   
